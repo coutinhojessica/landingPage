@@ -1,6 +1,41 @@
-.cabecalho {
-    background-color: blueviolet;
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header {
+    background-color: #F2D091;
+    height: 60px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner-cabecalho {
+    width: 990px;
+    height: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    padding: 0px 35px;
+    letter-spacing: 2px;
+}
+
+.menu-item {
+    color: #402217;
+}
+
+.menu-item:hover {
+    background-color: #7A9CFF;
+    padding: 10px;
+    color: #F2F2F2;
 }
