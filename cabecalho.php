@@ -14,10 +14,10 @@
     <header class="cabecalho">
        <div class="conteiner-cabecalho">
         <nav class="menu">
-            <a class="menu-item" href="">Home</a>
-            <a class="menu-item" href="">Blog</a>
-            <a class="menu-item" href="">Obras</a>
-            <a class="menu-item" href="">Contatos</a>
+            <a class="menu-item" href="index.php">Home</a>
+            <a class="menu-item" href="blog.php">Blog</a>
+            <a class="menu-item" href="obras.php">Obras</a>
+            <a class="menu-item" href="contatos.php">Contatos</a>
         </nav>
        </div>
     </header>
