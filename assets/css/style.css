@@ -44,11 +44,21 @@ header {
     letter-spacing: normal;
 }
 
+.active {
+    background-color: #7A9CFF;
+    padding: 10px;
+    color: #F2F2F2;
+    letter-spacing: normal;
+}
+
 /*Index*/
 
 .conteudo-principal {
     margin: 40px;
-    height: 550px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;    
 }
 .conteiner-index{
     width: 990px;
@@ -79,7 +89,6 @@ header {
 }
 
 .conteudo-secundario {
-    width: 800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -88,6 +97,7 @@ header {
 
 .conteiner-sobre {
     justify-content: center;
+    width: 755px;
 }
 
 .titulo-sobre {
@@ -107,6 +117,36 @@ header {
     margin: 0px auto;
 }
 
+.conteudo-terceiro {
+    width: 990px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.conteudo-terceiro p {
+    color: #928d8d;
+}
+
+.campo-email {
+    width: 500px;
+    padding: 10px;
+    color: #402217;
+}
+
+
+.botao-informacao {
+    width: 100px;
+    height: 49px;
+    padding: 8px;
+    background-color: #3F528C;
+    color: #fff;
+}
+
+/*Rodapé*/
+
 .conteiner-rodape {
     display: flex;
     justify-content: center;
@@ -116,6 +156,9 @@ header {
 }
 
 @media (max-width: 1024px)  {
+    header {
+        width: auto;
+    }
     .conteiner-cabecalho {
         width: auto;
     }
@@ -124,28 +167,70 @@ header {
     }
     .conteudo-principal {
         margin: 40px;
-        height: 990px;
+    }
+    .conteiner-sobre {
+        justify-content: center;
+        width: 800px;
     }
     .avatar{
         position: static;
     }
+    .conteudo-terceiro {
+        width: auto;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .campo-email {
+        width: 600px;
+    }
 }
 
 @media (max-width: 812px) and (min-width: 667px) {
-    
+
+    header {
+        width: auto;
+    }
     .conteiner-cabecalho {
         width: auto;
+    }
+    .conteudo-principal {
+        height: 150vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
     }
     .conteiner-index{
         width: auto;
     }
-    .descricao {
-        width: 550px;
+    .conteiner-sobre{
+        justify-content: center;
+        align-items: center;
+        background-color: #7A9CFF;
+        width: 700px;
     }
-
+    .descricao {
+        align-items: center;
+    }
+    .conteudo-terceiro {
+        width: auto;
+        margin: 50px;
+        height:1000px;
+        justify-content: center;
+    }
+    .campo-email {
+        width: 500px;
+        margin-bottom: 15px;
+    }
+    footer {
+        width: auto;
+    }
 }
 
 @media (max-width: 600px) and (min-width: 568px) {
+
     .titulo-site {
         font-size: 55px;
     }
@@ -164,10 +249,25 @@ header {
     .img-sobre {
         margin: 5px 150px;
     }
+    .conteudo-terceiro {
+        width: auto;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .informacao-usuario {
+        display: flex;
+        flex-direction: column;
+    }
+    .campo-email {
+        width: 500px;
+        margin-bottom: 20px;
+    }
   
 }
 
 @media (max-width: 414px) {
+
     header {
         height: auto;
         text-align: center;
@@ -180,7 +280,7 @@ header {
         font-size: 40px;
     }
     .conteiner-cabecalho {
-        width: auto;
+        width: 100%;
     }
     .conteudo-principal{
         height: auto;
@@ -194,6 +294,15 @@ header {
     .img-sobre {
         margin: 0px 50px;
     }
+    .informacao-usuario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .campo-email {
+        width: 250px;
+        margin-bottom: 10px;
+    }
     .conteiner-rodape h6 {
         font-size: 14px;
     }
@@ -201,14 +310,33 @@ header {
 }
 
 @media (max-width: 375px) {
+
     .descricao {
         width: 250px;
     }
 }
 
 @media (max-width: 320px) {
+    header{
+        width: auto;
+    }
     .descricao {
         width: 200px;
+    }
+    .conteudo-terceiro {
+        width: auto;
+    }
+    .informacao-usuario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .campo-email {
+        width: 250px;
+        margin-bottom: 10px;
+    }
+    footer {
+        width: auto;
     }
     .conteiner-rodape h6 {
         font-size: 12px;

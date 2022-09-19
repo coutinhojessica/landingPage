@@ -29,6 +29,13 @@
                 <img class="img-sobre" src="assets/imagens/caneta.png" alt="Imagem de uma pena em um tinteiro.">
             </aside>
         </section>
+        <section class="conteudo-terceiro">
+            <p class="frase">Informe seu melhor e-mail e se mantenha atualizado a respeito dos conteúdos.</p>
+            <div class="informacao-usuario">
+            <input type="email" name="campoEmail" class="campo-email" id="email" placeholder="e-mail@exemplo.com">
+            <input type="submit" class="botao-informacao" value="Enviar">
+        </div>
+    </section>
     </section>
     <?php include 'footer.php';?>
  </body>
