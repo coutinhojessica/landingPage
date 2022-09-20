@@ -31,22 +31,18 @@ header {
     flex-wrap: wrap;
 }
 
+.menu {
+    padding: 10px;
+}
+
 .menu-item {
     color: #402217;
-    padding: 30px;
-    letter-spacing: 3px;
+    padding: 20px;
 }
 
+.active, 
 .menu-item:hover {
     background-color: #7A9CFF;
-    padding: 10px;
-    color: #F2F2F2;
-    letter-spacing: normal;
-}
-
-.active {
-    background-color: #7A9CFF;
-    padding: 10px;
     color: #F2F2F2;
     letter-spacing: normal;
 }
