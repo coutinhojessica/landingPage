@@ -12,14 +12,14 @@
 </head>
 <body>
     <header class="cabecalho">
-       <div class="conteiner-cabecalho">
+    <div class="conteiner-cabecalho">
         <nav class="menu">
             <a class="menu-item active" href="index.php">Home</a>
             <a class="menu-item" href="blog.php">Blog</a>
             <a class="menu-item" href="obras.php">Obras</a>
             <a class="menu-item" href="contatos.php">Contatos</a>
         </nav>
-       </div>
+    </div>
     </header>
     <script src="assets/js/script.js"></script>
 </body>

@@ -6,45 +6,53 @@
     color: #402217;
 }
 
+html,
+body {
+    margin: 0 auto;
+    padding: 0;
+    overflow-x: hidden !important;
+}
+
 a {
     text-decoration: none;
     text-transform: uppercase;
 }
 
 
+
 /*Cabeçalho*/
 
 header {
     background-color: #F2D091;
-    height: 60px;
+    max-height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .conteiner-cabecalho {
-    width: 990px;
+    max-width: 990px;
     display: flex;
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .menu {
-    padding: 10px;
+    padding: 20px;
 }
 
 .menu-item {
     color: #402217;
-    padding: 20px;
+    padding: 17px;
+    margin: 20px;
 }
 
 .active, 
 .menu-item:hover {
     background-color: #7A9CFF;
     color: #F2F2F2;
-    letter-spacing: normal;
+    transition: 0.4s all;
 }
 
 /*Index*/
@@ -53,15 +61,19 @@ header {
     margin: 40px;
     height: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;    
+    justify-content: center;
+    flex-direction: row; 
 }
+
 .conteiner-index{
     width: 990px;
     display: flex;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
+}
+
+.title {
+    line-height: 10px;
 }
 
 .titulo-site {
@@ -69,6 +81,7 @@ header {
     color: #402217;
     padding: 40px 40px 0px 40px;
     font-size: 70px;
+    font-weight: 200px;
 }
 
 .sub-titulo{
@@ -78,22 +91,22 @@ header {
 }
 
 .avatar{
-    position: absolute;
-    width: 300px;
-    right: 170px;
-    top: 130px;
+    height: 500px;
 }
 
 .conteudo-secundario {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 75%;
     margin: 20px;
 }
 
 .conteiner-sobre {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    width: 755px;
+    
 }
 
 .titulo-sobre {
@@ -113,23 +126,25 @@ header {
     margin: 0px auto;
 }
 
-.conteudo-terceiro {
+.conteudo-terceiro div {
     width: 990px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 30px;
+    
 }
 
-.conteudo-terceiro p {
+.frase-usuario p {
     color: #928d8d;
 }
+
 
 .campo-email {
     width: 500px;
     padding: 10px;
     color: #402217;
+    border-color: black;
 }
 
 
@@ -151,192 +166,141 @@ header {
     padding: 10px;
 }
 
-@media (max-width: 1024px)  {
-    header {
-        width: auto;
-    }
-    .conteiner-cabecalho {
-        width: auto;
-    }
-    .conteiner-index{
-        width: auto;
-    }
+/*Responsividade*/
+
+@media (max-width: 1180px) and (min-width: 1024px){
     .conteudo-principal {
-        margin: 40px;
-    }
-    .conteiner-sobre {
-        justify-content: center;
-        width: 800px;
-    }
-    .avatar{
-        position: static;
-    }
-    .conteudo-terceiro {
-        width: auto;
-        height: auto;
+        height: 100%;
         display: flex;
-        justify-content: center;
+        flex-direction: column; 
         align-items: center;
-    }
-    .campo-email {
-        width: 600px;
-    }
+    } 
 }
 
-@media (max-width: 812px) and (min-width: 667px) {
-
-    header {
-        width: auto;
+@media (max-width:999px) and ( min-width: 800px) {
+        .conteudo-principal {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+            display: flex;
     }
-    .conteiner-cabecalho {
-        width: auto;
-    }
-    .conteudo-principal {
-        height: 150vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .conteiner-index{
-        width: auto;
-    }
-    .conteiner-sobre{
-        justify-content: center;
-        align-items: center;
-        background-color: #7A9CFF;
-        width: 700px;
-    }
-    .descricao {
-        align-items: center;
-    }
-    .conteudo-terceiro {
-        width: auto;
-        margin: 50px;
-        height:1000px;
-        justify-content: center;
-    }
-    .campo-email {
-        width: 500px;
-        margin-bottom: 15px;
-    }
-    footer {
-        width: auto;
-    }
+        .img-lizzie{
+            margin: 20px auto;
+        }
 }
 
-@media (max-width: 600px) and (min-width: 568px) {
+    @media (max-width:799px) and ( min-width: 600px) {
+        .conteudo-principal {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        .img-lizzie{
+            margin: 20px auto;
+        }
+    }
 
-    .titulo-site {
-        font-size: 55px;
+    @media (max-width:599px) and (min-width: 500px) {
+        .conteudo-principal {
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+        }
+        .menu{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        .conteudo-secundario {
+            width: 45%;
+        }
+        .frase-usuario p {
+            width: 45%;
+        }
+        .informacao-usuario .form-email-user{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .campo-email {
+            width: 450px;
+            margin-bottom: 10px;
+        }
+        .img-lizzie{
+            margin: 20px auto;
+        }
     }
-    .descricao {
-        width: 455px;
-    }
-    .conteiner-cabecalho {
-        width: auto;
-    }
-    .conteudo-principal{
-        height: auto;
-    }
-    .conteiner-index{
-        width: auto;
-    }
-    .img-sobre {
-        margin: 5px 150px;
-    }
-    .conteudo-terceiro {
-        width: auto;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
-    .informacao-usuario {
-        display: flex;
-        flex-direction: column;
-    }
-    .campo-email {
-        width: 500px;
-        margin-bottom: 20px;
-    }
-  
-}
 
-@media (max-width: 414px) {
+    @media (max-width:499px) and (min-width: 400px) {
+        .conteudo-principal {
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+        }
+        .menu{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        .conteudo-secundario {
+            width: 37%;
+        }
+        .frase-usuario p {
+            width: 38%;
+        }
+        .informacao-usuario .form-email-user{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .campo-email {
+            width: 390px;
+            margin-bottom: 10px;
+        }
+        .img-lizzie{
+            margin: 20px auto;
+        }
+    }
 
-    header {
-        height: auto;
-        text-align: center;
+    @media (max-width: 399px) and (min-width: 300px) {
+        .conteudo-principal {
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
     }
-    .conteiner-cabecalho nav {
-        display: flex;
-        flex-direction: column;
-    }
-    .titulo-site {
-        font-size: 40px;
-    }
-    .conteiner-cabecalho {
-        width: 100%;
-    }
-    .conteudo-principal{
-        height: auto;
-    }
-    .conteiner-index{
-        width: auto;
-    }
-    .descricao {
-        width: 300px;
-    }
-    .img-sobre {
-        margin: 0px 50px;
-    }
-    .informacao-usuario {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .campo-email {
-        width: 250px;
-        margin-bottom: 10px;
-    }
-    .conteiner-rodape h6 {
-        font-size: 14px;
-    }
-  
-}
-
-@media (max-width: 375px) {
-
-    .descricao {
-        width: 250px;
-    }
-}
-
-@media (max-width: 320px) {
-    header{
-        width: auto;
-    }
-    .descricao {
-        width: 200px;
-    }
-    .conteudo-terceiro {
-        width: auto;
-    }
-    .informacao-usuario {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .campo-email {
-        width: 250px;
-        margin-bottom: 10px;
-    }
-    footer {
-        width: auto;
-    }
-    .conteiner-rodape h6 {
-        font-size: 12px;
-    }
-  
-
+        .menu{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        .titulo-site {
+            font-size: 50px;
+        }
+        .conteudo-secundario {
+            width: 30%;
+        }
+        .frase-usuario p {
+            width: 30%;
+        }
+        .informacao-usuario .form-email-user{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .campo-email {
+            width: 300px;
+            margin-bottom: 10px;
+        }
+        .img-lizzie{
+            margin: 20px auto;
+        }
 }

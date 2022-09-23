@@ -15,28 +15,36 @@
 </head>
 <body>
     <?php include 'cabecalho.php';?>
-    <section class="conteudo-principal">
-        <main class="conteiner-index">
-            <h1 class="titulo-site">Lizze Evans</h1>
-            <p class="sub-titulo">Aspirante a Escritora</p>
-            <div>
-                <img class="avatar" src="assets/imagens/avatar/jessica2-principal.png" alt="Avatar de Lizzie Evans">
+    <main class="conteudo-principal">
+        <section class="conteiner-index">
+            <div class="title">
+                <h1 class="titulo-site">Lizze Evans</h1>
+                <p class="sub-titulo">Aspirante a Escritora</p>
             </div>
-        </main>
-        <section class="conteudo-secundario">
+            <div class="conteudo-secundario">
             <aside class="conteiner-sobre">
                 <p class="descricao">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium officiis dolore harum vitae, non necessitatibus blanditiis inventore maiores minus, hic possimus, consequatur laborum. Quae dolore, iusto molestias dolor mollitia pariatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, non. Consequatur odio dolore libero minus esse maxime dolorum, dolores facere eveniet cumque provident quis ea repudiandae voluptatibus nobis, magnam vitae.</p>
                 <img class="img-sobre" src="assets/imagens/caneta.png" alt="Imagem de uma pena em um tinteiro.">
             </aside>
-        </section>
-        <section class="conteudo-terceiro">
-            <p class="frase">Informe seu melhor e-mail e se mantenha atualizado a respeito dos conteúdos.</p>
+            </div>
+            <div class="conteudo-terceiro">
+                <div class="frase-usuario">
+                    <p>Informe seu melhor e-mail e se mantenha atualizado a respeito dos conteúdos.
+                    </p>
+                
             <div class="informacao-usuario">
-            <input type="email" name="campoEmail" class="campo-email" id="email" placeholder="e-mail@exemplo.com">
-            <input type="submit" class="botao-informacao" value="Enviar">
-        </div>
-    </section>
-    </section>
+                <form class="form-email-user" action="" method="$_POST">
+                    <input type="email" name="campoEmail" class="campo-email" id="email" placeholder="e-mail@exemplo.com">
+                    <input type="submit" class="botao-informacao" value="Enviar">
+                </form>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="img-lizzie">
+                <img class="avatar" src="assets/imagens/avatar/jessica2-principal.png" alt="Avatar de Lizzie Evans">
+        </section>
+    </main>
     <?php include 'footer.php';?>
- </body>
+</body>
 </html>
