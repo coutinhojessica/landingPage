@@ -304,3 +304,42 @@ header {
             margin: 20px auto;
         }
 }
+
+    @media (max-width: 299px) and (min-width: 200px){
+        .conteudo-principal {
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+    }
+        .menu{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        .titulo-site {
+            font-size: 40px;
+        }
+        .conteudo-secundario {
+            width: 20%;
+        }
+        .frase-usuario p {
+            width: 25%;
+        }
+        .informacao-usuario .form-email-user{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .campo-email {
+            width: 250px;
+            margin-bottom: 10px;
+        }
+        .avatar{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+    }
