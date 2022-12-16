@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    color: #402217;
+}
+
+html,
+body {
+    margin: 0 auto;
+    padding: 0;
+    overflow-x: hidden !important;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/*Cabeçalho*/
+
+header {
+    background-color: #F2D091;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner-cabecalho {
+    max-width: 990px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menu {
+    padding: 20px;
+}
+
+.menu-item {
+    color: #402217;
+    padding: 17px;
+    margin: 20px;
+}
+
+.active, 
+.menu-item:hover {
+    background-color: #7A9CFF;
+    color: #F2F2F2;
+    transition: 0.4s all;
+}
+
+/*Page Blog*/
+
+.conteiner-conteudo {
+    margin: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+} 
+
+.title_page {
+    margin: 20px;
+    font-size: 23px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}  
+
+.teste {
+    align-items: flex-start;
+    justify-content: flex-start;
+    display: flex;
+    width: 1600px;
+}
+
+.teste h2 {
+    text-align: left;
+    display: flex;
+    padding: 0.5em;
+}
+
+.box-img-conteudo {
+    justify-content: center;
+    display: flex;
+}
+
+.conteiner_noticias {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+article {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+}
+
+article a {
+    text-decoration: none;
+}
+
+article .new_data {
+    display: flex;
+
+}
+article .new_posted_at {
+    background-color: #2b4c99;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px;
+    margin-right: 2px;
+}
+
+article .new_comments {
+    background-color: #39aae1;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px;
+}
+
+article .new_thumbnail{
+    margin-top: 30px;
+}
+
+article .new_thumbnail img {
+    width: 100%;
+    height: auto;
+}
+
+article .news-title {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 23px;
+    color: black;
+}
+
+article .new_resume {
+    font-size: 14px;
+    color: #5c5c5c;
+    line-height: 20px;
+    margin-bottom: 30px;
+    text-indent: 20px;
+    text-align: justify;
+}
