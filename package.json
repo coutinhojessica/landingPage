@@ -1,0 +1,27 @@
+{
+  "name": "landingpage",
+  "version": "1.0.0",
+  "description": "Local criando para expor os livros que escrevo.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coutinhojessica/landingPage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/coutinhojessica/landingPage/issues"
+  },
+  "homepage": "https://github.com/coutinhojessica/landingPage#readme",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.4.0",
+    "globals": "^17.6.0",
+    "prettier": "^3.8.3"
+  }
+}
