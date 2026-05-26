@@ -14,9 +14,9 @@
 .nav-logo-btnMenu {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  height: 30%;
+  padding-bottom: 2rem;
 }
 
 #menu-mobile {
@@ -116,11 +116,10 @@
 @media (max-width: 768px) {
   .nav-bar {
     gap: 3rem;
-    flex-direction: column;
   }
 
   .nav-logo-btnMenu {
-    width: 50%;
+    width: 100%;
   }
 
   .nav-list {
@@ -146,12 +145,13 @@
   }
 
   .nav-item {
-    margin: 2rem 0;
+    margin: 5rem 0;
   }
 
   .nav-link {
     padding: 1rem 0;
     margin: 0rem 1rem;
+    font-size: 1.8rem;
   }
 
   .btn-faleComigo {
@@ -181,11 +181,5 @@
     height: 2px;
     background: currentcolor;
     margin-top: 5px;
-  }
-}
-
-@media (min-height: 1440px) {
-  .nav-bar {
-    width: 65%;
   }
 }
