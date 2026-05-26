@@ -1,0 +1,191 @@
+@import url(global.css);
+@import url(theme.css);
+
+.cabecalho {
+  height: 6.5rem;
+  background-color: var(--bg);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav-logo-btnMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 30%;
+}
+
+#menu-mobile {
+  display: none;
+}
+
+.logo {
+  width: 7rem;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+.container-menu-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80%;
+  gap: 1.5rem;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 1.7rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--textP);
+  padding: 8px 20px;
+  transition: 0.5s ease;
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+.nav-link:hover {
+  background-color: var(--btnH);
+  font-weight: 800;
+  text-shadow: 3px 3px 10px var(--destaque);
+}
+
+.btn-faleComigo {
+  background-color: var(--btnP);
+  color: var(--textP);
+  font-weight: 600;
+  padding: 9px 13px;
+  border-radius: 5px;
+  border: 3px dotted var(--linhaDecor);
+  transition: 0.5s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+.btn-faleComigo:hover {
+  transform: scale(1.1);
+}
+
+#ativarTema {
+  background: transparent;
+  border: none;
+  padding: 10px;
+}
+
+/* Tema escuro */
+.escuro-tema {
+  width: 2.8rem;
+  transition: 1s ease;
+  filter: brightness(77%) contrast(83%) saturate(98%) sepia(40%);
+  cursor: pointer;
+}
+
+.escuro-tema:hover {
+  rotate: -15deg;
+  scale: 1.1;
+}
+
+/* Tema Claro */
+.claro-tema {
+  width: 2.8rem;
+  transition: 1s ease;
+  filter: brightness(77%) contrast(83%) saturate(98%) sepia(40%);
+  cursor: pointer;
+  display: none;
+}
+
+.claro-tema:hover {
+  rotate: 45deg;
+  scale: 1.1;
+}
+
+@media (max-width: 768px) {
+  .nav-bar {
+    gap: 3rem;
+    flex-direction: column;
+  }
+
+  .nav-logo-btnMenu {
+    width: 50%;
+  }
+
+  .nav-list {
+    display: block;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 0;
+    top: 100px;
+    left: 0;
+    background: var(--bg);
+    z-index: 1000;
+    transition: 0.6s;
+    visibility: hidden;
+    overflow-y: hidden;
+    border-top: 10px dotted var(--linhaDecor);
+  }
+
+  .nav-bar.activeMenu .nav-list {
+    height: calc(100vh - 100px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+
+  .nav-item {
+    margin: 2rem 0;
+  }
+
+  .nav-link {
+    padding: 1rem 0;
+    margin: 0rem 1rem;
+  }
+
+  .btn-faleComigo {
+    width: 50%;
+  }
+
+  #menu-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+
+  #hamburger {
+    color: var(--linhaDecor);
+    width: 20px;
+    border-top: 2px solid;
+  }
+  #hamburger::after,
+  #hamburger::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentcolor;
+    margin-top: 5px;
+  }
+}
+
+@media (min-height: 1440px) {
+  .nav-bar {
+    width: 65%;
+  }
+}

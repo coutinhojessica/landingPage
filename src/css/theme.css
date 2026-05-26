@@ -1,0 +1,60 @@
+.claro {
+  /* Background principal */
+  --bg: #f5ebdd;
+
+  /* Background secundário */
+  --bgS: #e7d4c1;
+
+  /* Cards */
+  --cardS: #fff9f2;
+
+  /* Texto principal */
+  --textP: #3a2418;
+
+  /* Texto secundário */
+  --textS: #6b4a35;
+
+  /* Botão principal */
+  --btnP: #9a5b2a;
+
+  /* Hover botão */
+  --btnH: #6e3c1f;
+
+  /* Destaques */
+  --destaque: #d89b4a;
+
+  /* Linhas/Decoração */
+  --linhaDecor: #b98b68;
+
+  /* Elementos naturais */
+  --elements: #596347;
+}
+
+.escuro {
+  /* Background principal */
+  --bg: #16110d;
+
+  /* Background Secundário */
+  --bgS: #241811;
+
+  /* Navbar/Footer  */
+  --navFooter: #1b140f;
+
+  /* Cards */
+  --cards: #2d1d15;
+
+  /* Texto principal */
+  --textP: #f3e3d3;
+
+  /* Texto Secundário */
+  --textS: #c77b30;
+
+  /* Botão hover */
+  --btnH: #c77b30;
+
+  /* Detalhes decorativos */
+  --linhaDecor: #9c6235;
+
+  /* Elementos naturais */
+  --elements: #3d4632;
+}
